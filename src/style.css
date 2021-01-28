@@ -1,0 +1,135 @@
+body {
+  align-items: center;
+  background-color: #2d3436;
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App component */
+.app {
+  width: 350px;
+}
+
+.app header {
+  background-color: #fff;
+  border-top: 1em solid #e11c3e;
+  border-bottom: 1px solid #eeeeee;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  color: #e11c3e;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.app ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Form component */
+.task-input {
+  border-style: none;
+  float: left;
+  height: 0px;
+  padding: 22px;
+  width: 70%;
+}
+
+.submit-button {
+  background-color: #e11c3e;
+  border-style: none;
+  color: #fff;
+  height: 44px;
+  width: 61px;
+}
+
+/* Todo List component */
+
+.checkbox {
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  float: left;
+  padding: 0.75em 1em;
+  transition: 0.3s ease-in-out;
+  width: 257px;
+}
+
+.checkbox .border {
+  border: 1px solid #cccccc;
+  border-radius: 30%;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  margin-right: 0.5em;
+  position: relative;
+  vertical-align: middle;
+  width: 24px;
+}
+
+.checkbox .indicator {
+  background: #e11c3e;
+  border-radius: 4px;
+  height: 20px;
+  margin: 2px;
+  position: absolute;
+  transform: scale(0);
+  transition: transform 100ms;
+  width: 20px;
+  z-index: 1;
+}
+
+.checkbox .indicator.checked {
+  transform: scale(1);
+}
+
+.checkbox::after {
+  background-color: #e11c3e;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  top: 0;
+  width: 0;
+}
+
+.checkbox:hover::after {
+  width: 5px;
+}
+
+.checkbox:hover {
+  transform: translateX(-1em);
+}
+
+.delete-button {
+  background-color: #e11c3e;
+  border-style: none;
+  color: #fff;
+  height: 50px;
+  line-height: 0;
+  width: 61px;
+}
+
+.delete-button:hover {
+  background-color: #a20c25;
+}
+
+/* Footer component */
+
+footer {
+  border-top: 1px solid #eeeeee;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #fff;
+  margin: 0;
+  padding: 0.7em 0;
+}
