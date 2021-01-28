@@ -2,12 +2,12 @@
 
 This is a sample react todo app.
 
-Check the demo hosted on Netlify .
+Check the demo hosted on Netlify Check the demo hosted on Netlify [React Todo App](https://eager-colden-19dd4d.netlify.app).
 
 Instructions
 First clone this repository.
 
-`$ git clone`
+`$ git clone git@github.com:JenniferWjertzoch/react-todo-app.git`
 
 Install dependencies. Make sure you already have nodejs & npm installed in your system.
 

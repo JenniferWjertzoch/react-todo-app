@@ -35,6 +35,7 @@ body {
 
 /* Form component */
 .task-input {
+  border-radius: 0;
   border-style: none;
   float: left;
   height: 0px;
